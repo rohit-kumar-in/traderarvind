@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अरविंद ट्रेडिंग | थोक तिरपाल (Tripal), मजबूत रस्सी (Rassi) और कैरी बैग | भागलपुर, जगदीशपुर, अमरपुर, रजौन,
+        सन्हौला</title>
+    <meta name="description"
+        content="अरविंद ट्रेडिंग भागलपुर - तिरपाल (Tripal), प्लास्टिक/नायलॉन रस्सी (Rassi) और थोक कैरी बैग के मुख्य डीलर। जगदीशपुर, अमरपुर, रजौन, सन्हौला, असरगंज, सुल्तानगंज और इसके आस-पास के 20 किमी में 24 घंटे में सुपरफास्ट डिलीवरी। अभी थोक रेट पूछें।">
+
+    <!-- Local Business Schema Markup for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "अरविंद ट्रेडिंग (Arvind Trading)",
+      "image": "tarpaulin_tripal.png",
+      "telephone": "+91-7644000929",
+      "email": "info@arvindtrading.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4266+JX8, Jagdishpur",
+        "addressLocality": "Bhagalpur",
+        "addressRegion": "Bihar",
+        "postalCode": "813105",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.1843",
+        "longitude": "86.9745"
+      },
+      "url": "https://www.arvindtrading.com",
+      "priceRange": "$$",
+      "areaServed": [
+        "Bhagalpur",
+        "Jagdishpur",
+        "Amarpur",
+        "Rajoun",
+        "Sanhola",
+        "Asarganj",
+        "Sultanganj",
+        "Saino"
+      ],
+      "description": "थोक तिरपाल (Tripal), मजबूत रस्सी (Rassi) और किराना/कपड़ों के थोक कैरी बैग के मुख्य डीलर और विनिर्माता।"
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for interactive configurator */
+        .config-container {
+            background: linear-gradient(135deg, rgba(30, 62, 98, 0.2) 0%, rgba(5, 11, 20, 0.5) 100%);
+            border: 1px solid var(--border-gold-glass);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-top: 3rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .config-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .config-header h3 {
+            font-size: 1.8rem;
+            color: var(--color-gold);
+        }
+
+        .config-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .config-preview-panel {
+            text-align: center;
+        }
+
+        .config-image-wrapper {
+            width: 100%;
+            height: 220px;
+            border-radius: 12px;
+            border: 1px solid var(--border-glass);
+            overflow: hidden;
+            background: #08101a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding: 12px;
+        }
+
+        .config-image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: var(--transition-smooth);
+        }
+
+        .config-options-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        .option-title {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-light);
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .option-title span {
+            color: var(--color-gold);
+        }
+
+        .selector-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .selector-item {
+            padding: 0.6rem 1.2rem;
+            border: 1px solid var(--border-glass);
+            background: rgba(5, 11, 20, 0.6);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .selector-item:hover {
+            border-color: var(--color-gold-glass);
+        }
+
+        .selector-item.selected {
+            border-color: var(--color-gold);
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--color-gold);
+        }
+
+        .color-dot {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .color-dot.selected {
+            border-color: var(--color-gold);
+            transform: scale(1.15);
+        }
+
+        .color-dot::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 50%;
+            border: 2px solid var(--bg-dark);
+        }
+
+        .badge-hindi {
+            display: inline-block;
+            background: var(--color-gold-muted);
+            color: var(--color-gold);
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .config-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="announcement-bar">
+            <span>💥 विशेष स्वागत ऑफर: नए ग्राहकों के लिए पहले ऑर्डर पर फ्लैट 5% की विशेष थोक छूट! 💥</span>
+        </div>
+        <div class="nav-container">
+            <a href="#" class="logo" id="logo-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                </svg>
+                अरविंद<span>ट्रेडिंग</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#products">हमारे उत्पाद</a></li>
+                    <li><a href="#configurator">कलर और साइज़ चुनें</a></li>
+                    <li><a href="#about">हमें क्यों चुनें</a></li>
+                    <li><a href="#coverage">डिलीवरी क्षेत्र</a></li>
+                    <li><a href="#quote">पूछताछ फॉर्म</a></li>
+                </ul>
+            </nav>
+
+            <div class="cta-group-nav">
+                <a href="tel:+917644000929" class="btn btn-secondary" id="nav-call-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    कॉल करें
+                </a>
+                <a href="#configurator" class="btn btn-primary" id="nav-whatsapp-btn">
+                    व्हाट्सएप आर्डर
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M20 7h-9M14 3v8M3 17h18M3 21h18" />
+                    </svg>
+                    थोक विक्रेता: कैरी बैग, रस्सी और तिरपाल
+                </div>
+                <h1>व्यवसाय के विकास के लिए <span>स्मार्ट B2B समाधान</span></h1>
+                <p>स्थानीय व्यापारियों का भरोसेमंद साथी। हम जगदीशपुर, सन्हौला, असरगंज और सुल्तानगंज में उच्च गुणवत्ता
+                    वाले वाटरप्रूफ तिरपाल (Tripal), मजबूत रस्सी (Rassi) और सभी साइज़ के कैरी बैग्स की थोक आपूर्ति करते
+                    हैं।</p>
+                <div class="hero-ctas">
+                    <a href="https://wa.me/917644000929?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%AF%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BF%E0%A4%82%E0%A4%A6%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A1%E0%A4%BF%E0%A4%82%E0%A4%97%2C%20%E0%A4%AE%E0%A5%8D%E0%A4%97%E0%A5%87%20%E0%A4%A5%E0%A5%8B%E0%A4%95%20%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%95%E0%A5%87%20%E0%A4%B2%E0%A4%BF%E0%A4%8F%20%E0%A4%B0%E0%A5%87%E0%A4%9F%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F%E0%A5%8D%E0%A5%8B%E0%A5%8D%E0%A5%8D%E0%A5%8D"
+                        target="_blank" class="btn btn-primary btn-whatsapp" id="hero-whatsapp-cta">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        व्हाट्सएप पर रेट पूछें
+                    </a>
+                    <a href="tel:+917644000929" class="btn btn-secondary" id="hero-call-cta">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        अभी कॉल करें
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="premium-card-visual">
+                    <div class="visual-line"></div>
+                    <h3 class="visual-title">अरविंद ट्रेडिंग</h3>
+                    <p>कस्टम साइज, प्रीमियम मोटाई गेज, हेवी-ड्यूटी रस्सियों और मजबूत पैकेजिंग बैग के थोक डीलर।</p>
+                    <div class="visual-stats">
+                        <div class="stat-item">
+                            <h4>जगदीशपुर</h4>
+                            <p>भागलपुर, बिहार</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>मजबूती की गारंटी</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Portfolio Section -->
+    <section class="services" id="products">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">हमारे प्रीमियम <span>उत्पाद</span></h2>
+                <p>कृषि, परिवहन, खुदरा पैकेजिंग और औद्योगिक उपयोग के लिए बेहतरीन गुणवत्ता के उत्पाद।</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" style="padding: 1.5rem;">
+                    <div class="config-image-wrapper" style="height: 180px;">
+                        <img src="carry_bags.png" alt="कैरी बैग">
+                    </div>
+                    <h3>कैरी बैग (Carry Bags)</h3>
+                    <p>किराना दुकान, कपड़ों के शोरूम और बर्तनों के लिए हर साइज और विभिन्न रंगों (काले, नीले आदि) में
+                        उपलब्ध कैरी बैग।</p>
+                </div>
+                <div class="service-card" style="padding: 1.5rem;">
+                    <div class="config-image-wrapper" style="height: 180px;">
+                        <img src="tarpaulin_tripal.png" alt="तिरपाल">
+                    </div>
+                    <h3>तिरपाल (Tripal)</h3>
+                    <p>100% वाटरप्रूफ, मजबूत और लंबे समय तक चलने वाले तिरपाल। खेत की सुरक्षा और माल ढकने के लिए उत्तम।
+                    </p>
+                </div>
+                <div class="service-card" style="padding: 1.5rem;">
+                    <div class="config-image-wrapper" style="height: 180px;">
+                        <img src="ropes_rassi.png" alt="रस्सी">
+                    </div>
+                    <h3>रस्सी (Rassi)</h3>
+                    <p>HDPE, नायलॉन और प्लास्टिक की उच्च तन्य क्षमता वाली रस्सियाँ। भारी सामान बांधने और कृषि कार्यों के
+                        लिए उपयुक्त।</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="products.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                    सभी 50+ थोक उत्पाद देखें
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Product Configurator Section -->
+    <section id="configurator"
+        style="background: radial-gradient(circle at 10% 20%, rgba(30, 62, 98, 0.2) 0%, rgba(5, 11, 20, 1) 80%);">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">मनपसंद <span>कलर और साइज़ चुनें</span></h2>
+                <p>नीचे दिए गए विकल्पों में से उत्पाद का प्रकार, रंग और आकार चुनें और सीधे व्हाट्सएप पर ऑर्डर/कोटेशन
+                    प्राप्त करें।</p>
+            </div>
+
+            <div class="config-container">
+                <div class="config-grid">
+                    <!-- Preview Panel -->
+                    <div class="config-preview-panel">
+                        <div class="config-image-wrapper">
+                            <img id="config-product-img" src="carry_bags.png" alt="उत्पाद प्रीव्यू">
+                        </div>
+                        <h4 id="config-product-title"
+                            style="font-size: 1.4rem; color: var(--text-light); margin-bottom: 0.5rem;">कैरी बैग (Carry
+                            Bags)</h4>
+                        <p id="config-summary"
+                            style="font-size: 0.95rem; color: var(--color-gold); font-weight: 600; margin-bottom: 1.5rem;">
+                            सफेद रंग | 8x10 इंच (5 kg)</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <button id="config-whatsapp-btn" class="btn btn-whatsapp" style="width: 100%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                </svg>
+                                इस कॉम्बिनेशन का व्हाट्सएप आर्डर करें
+                            </button>
+                            <a href="tel:+917644000929" class="btn btn-secondary" style="width: 100%;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                फोन पर डायरेक्ट बात करें
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Options Panel -->
+                    <div class="config-options-panel">
+                        <!-- 1. Product Type -->
+                        <div>
+                            <div class="option-title">1. उत्पाद चुनें</div>
+                            <div class="selector-row" id="product-selector-row">
+                                <div class="selector-item selected" data-value="CarryBags" data-img="carry_bags.png">
+                                    कैरी बैग (Carry Bags)</div>
+                                <div class="selector-item" data-value="Tripal" data-img="tarpaulin_tripal.png">तिरपाल
+                                    (Tripal)</div>
+                                <div class="selector-item" data-value="Rassi" data-img="ropes_rassi.png">रस्सी (Rassi)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Colors Selection -->
+                        <div>
+                            <div class="option-title">2. रंग चुनें: <span id="selected-color-label">सफेद</span></div>
+                            <div class="selector-row" id="color-selector-row">
+                                <div class="color-dot selected"
+                                    style="background-color: #F8FAFC; border: 1px solid var(--border-glass);"
+                                    data-color="सफेद"></div>
+                                <div class="color-dot" style="background-color: #1E3E62;" data-color="नीला"></div>
+                                <div class="color-dot" style="background-color: #111111;" data-color="काला"></div>
+                                <div class="color-dot" style="background-color: #E2B13C;" data-color="पीला"></div>
+                                <div class="color-dot" style="background-color: #2D6A4F;" data-color="हरा"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Sizes Selection -->
+                        <div>
+                            <div class="option-title">3. साइज / मोटाई चुनें</div>
+                            <div class="selector-row" id="size-selector-row">
+                                <!-- Dynamic Sizes based on selection -->
+                                <div class="selector-item selected" data-size="12x15 फ़ीट">12x15 फ़ीट</div>
+                                <div class="selector-item" data-size="15x18 - फ़ीट">15x18 फ़ीट</div>
+                                <div class="selector-item" data-size="18x24 - फ़ीट">18x24 - फ़ीट</div>
+                                <div class="selector-item" data-size="24x30 - फ़ीट">24x30 - फ़ीट</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Disclaimer Section -->
+    <section class="pricing-disclaimer">
+        <div class="section-container">
+            <div class="disclaimer-card">
+                <div class="disclaimer-icon">!</div>
+                <h3>कीमतों की जानकारी</h3>
+                <p>इस वेबसाइट पर दिखाई गई जानकारी केवल संदर्भ के लिए है। अंतिम कीमत आपके आर्डर के आकार, रंग, मोटाई और
+                    मात्रा के आधार पर तय होती है। सही थोक मूल्य के लिए, कृपया हमारे व्हाट्सएप पर
+                    सम्पर्क करें या सीधे कॉल करें।</p>
+                <div class="disclaimer-actions">
+                    <a href="https://wa.me/917644000929?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%AF%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BF%E0%A4%82%E0%A4%A6%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A1%E0%A4%BF%E0%A4%82%E0%A4%97%2C%20%E0%A4%AE%E0%A5%8D%E0%A4%97%E0%A5%87%20%E0%A4%A5%E0%A5%8B%E0%A4%95%20%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%95%E0%A5%87%20%E0%A4%B2%E0%A4%BF%E0%A4%8F%20%E0%A4%B0%E0%A5%87%E0%A4%9F%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F%E0%A5%8D%E0%A5%8B%E0%A5%8D%E0%A5%8D"
+                        target="_blank" class="btn btn-primary btn-whatsapp" id="disc-whatsapp-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        व्हाट्सएप पर रेट पूछें
+                    </a>
+                    <a href="tel:+917644000929" class="btn btn-secondary" id="disc-call-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        बातचीत करें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Coverage Section -->
+    <section class="coverage" id="coverage"
+        style="background: radial-gradient(circle at 80% 80%, rgba(30, 62, 98, 0.15) 0%, rgba(5, 11, 20, 1) 70%); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">थोक डिलीवरी <span>एवं सेवा क्षेत्र (20 किमी दायरा)</span></h2>
+                <p>हम इन प्रमुख शहरों और इनके आस-पास के 20 किलोमीटर के सभी क्षेत्रों/गाँवों में 24 घंटे में सीधे थोक
+                    आर्डर पहुँचाते हैं:</p>
+            </div>
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+                <div class="service-card" style="padding: 2rem 1.5rem; text-align: center;">
+                    <div class="service-icon" style="justify-content: center; margin-bottom: 1rem;">📍</div>
+                    <h3>भागलपुर (Bhagalpur)</h3>
+                    <p style="font-size: 0.85rem;">मुख्य शहरी व्यापारी और थोक मंडी लॉजिस्टिक्स</p>
+                </div>
+                <div class="service-card" style="padding: 2rem 1.5rem; text-align: center;">
+                    <div class="service-icon" style="justify-content: center; margin-bottom: 1rem;">📍</div>
+                    <h3>जगदीशपुर (Jagdishpur)</h3>
+                    <p style="font-size: 0.85rem;">कृषि तिरपाल और थोक कैरी बैग की आपूर्ति</p>
+                </div>
+                <div class="service-card" style="padding: 2rem 1.5rem; text-align: center;">
+                    <div class="service-icon" style="justify-content: center; margin-bottom: 1rem;">📍</div>
+                    <h3>अमरपुर (Amarpur)</h3>
+                    <p style="font-size: 0.85rem;">स्थानीय दुकानों हेतु रस्सी व थोक कैरी बैग डिलीवरी</p>
+                </div>
+                <div class="service-card" style="padding: 2rem 1.5rem; text-align: center;">
+                    <div class="service-icon" style="justify-content: center; margin-bottom: 1rem;">📍</div>
+                    <h3>रजौन (Rajoun)</h3>
+                    <p style="font-size: 0.85rem;">हार्डवेयर दुकानों के लिए तिरपाल व मजबूत रस्सियाँ</p>
+                </div>
+                <div class="service-card" style="padding: 2rem 1.5rem; text-align: center;">
+                    <div class="service-icon" style="justify-content: center; margin-bottom: 1rem;">📍</div>
+                    <h3>सन्हौला (Sanhola)</h3>
+                    <p style="font-size: 0.85rem;">मजबूत रस्सियाँ और खेतों के तिरपाल की फास्ट डिलीवरी</p>
+                </div>
+                <div class="service-card" style="padding: 2rem 1.5rem; text-align: center;">
+                    <div class="service-icon" style="justify-content: center; margin-bottom: 1rem;">📍</div>
+                    <h3>असरगंज (Asarganj)</h3>
+                    <p style="font-size: 0.85rem;">किराना बैग, शोरूम कैरी बैग और भारी बर्तन बैग</p>
+                </div>
+                <div class="service-card" style="padding: 2rem 1.5rem; text-align: center;">
+                    <div class="service-icon" style="justify-content: center; margin-bottom: 1rem;">📍</div>
+                    <h3>सुल्तानगंज (Sultanganj)</h3>
+                    <p style="font-size: 0.85rem;">थोक व्यापारी नेटवर्क और लॉजिस्टिक्स सपोर्ट</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="about">
+        <div class="section-container">
+            <div class="why-container">
+                <div class="why-image-wrapper">
+                    <div class="why-badge-grid">
+                        <div class="why-badge-card">
+                            <div class="why-badge-icon">🛡️</div>
+                            <h4>पक्की मजबूती</h4>
+                            <p>100% वाटरप्रूफ तिरपाल और टूटने से मुक्त मजबूत रस्सियाँ।</p>
+                        </div>
+                        <div class="why-badge-card">
+                            <div class="why-badge-icon">⚡</div>
+                            <h4>तेज डिलीवरी</h4>
+                            <p>आपके आर्डर के बाद जल्द से जल्द आपके पते पर सुरक्षित डिलीवरी।</p>
+                        </div>
+                        <div class="why-badge-card">
+                            <div class="why-badge-icon">💰</div>
+                            <h4>सही थोक भाव</h4>
+                            <p>बीच में कोई कमीशन एजेंट नहीं, सीधे फैक्ट्री थोक रेट का लाभ।</p>
+                        </div>
+                        <div class="why-badge-card">
+                            <div class="why-badge-icon">📞</div>
+                            <h4>डायरेक्ट कॉल सपोर्ट</h4>
+                            <p>मालिक से सीधी बात करें और अपनी जरूरत के हिसाब से रेट तय करें।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-bullets">
+                    <div class="section-header" style="text-align: left; margin-bottom: 3rem;">
+                        <h2 class="section-title">बिहार में आपका <span>विश्वसनीय व्यापारिक भागीदार</span></h2>
+                        <p>हम आपके व्यवसाय के आकार और कस्टम आवश्यकताओं के अनुसार आर्डर तैयार करते हैं।</p>
+                    </div>
+                    <div class="why-bullet-item">
+                        <div class="why-bullet-num">1</div>
+                        <div class="why-bullet-content">
+                            <h3>सीधा संपर्क, कोई बिचौलिया नहीं</h3>
+                            <p>पारदर्शी काम और सटीक डीलिंग के लिए सीधे हमसे बात करें।</p>
+                        </div>
+                    </div>
+                    <div class="why-bullet-item">
+                        <div class="why-bullet-num">2</div>
+                        <div class="why-bullet-content">
+                            <h3>विभिन्न साइज़ और गेज विकल्प</h3>
+                            <p>आपके रिटेल/औद्योगिक जरूरतों के हिसाब से सभी साइज कस्टमाइज्ड उपलब्ध हैं।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section class="lead-section" id="quote">
+        <div class="section-container">
+            <div class="quote-container">
+                <div class="quote-info">
+                    <h2>थोक मूल्य कोटेशन फॉर्म</h2>
+                    <p>नीचे दी गई जानकारी भरें और अपना व्हाट्सएप पूछताछ आर्डर सबमिट करें। हम तुरंत आपसे संपर्क करेंगे।
+                    </p>
+                    <div class="trust-badges">
+                        <div class="trust-badge-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>असली वर्जिन पॉलीमर क्वालिटी</span>
+                        </div>
+                        <div class="trust-badge-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>कस्टम प्रिंटिंग और डिजाइन उपलब्ध</span>
+                        </div>
+                        <div class="trust-badge-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>संपूर्ण बिहार क्षेत्र में थोक नेटवर्क</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="tel:+917644000929" class="btn btn-secondary" id="direct-call-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            डायरेक्ट कॉल करें: 7644000929
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quotation Builder Card -->
+                <div class="quote-builder-card">
+                    <div class="builder-progress">
+                        <div class="progress-dot active" id="dot-1"></div>
+                        <div class="progress-dot" id="dot-2"></div>
+                        <div class="progress-dot" id="dot-3"></div>
+                    </div>
+
+                    <form id="quoteForm">
+                        <div class="builder-step active" id="step-1">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--text-light);">1. व्यापारी का विवरण</h3>
+                            <div class="form-group">
+                                <label for="clientName">आपका नाम</label>
+                                <input type="text" id="clientName" class="form-control" placeholder="उदा. रमेश कुमार"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyName">दुकान / कंपनी का नाम और स्थान</label>
+                                <input type="text" id="companyName" class="form-control"
+                                    placeholder="उदा. रमेश किराना स्टोर, सुल्तानगंज" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="industrySelect">डिलीवरी का क्षेत्र चुनें</label>
+                                <select id="industrySelect" class="form-control">
+                                    <option value="Jagdishpur">जगदीशपुर</option>
+                                    <option value="Sanhola">सन्हौला</option>
+                                    <option value="Asarganj">असरगंज</option>
+                                    <option value="Sultanganj">सुल्तानगंज</option>
+                                    <option value="Other Area in Bihar">बिहार में अन्य स्थान</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="builder-step" id="step-2">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--text-light);">2. मुख्य उत्पाद चुनें</h3>
+                            <div class="options-grid">
+                                <div class="option-select selected" data-value="Grocery Carry Bags">Grocery बैग</div>
+                                <div class="option-select" data-value="Tarpaulin (Tripal)">तिरपाल (Tripal)</div>
+                                <div class="option-select" data-value="HDPE / Nylon Ropes (Rassi)">रस्सी (Rassi)</div>
+                                <div class="option-select" data-value="Cloth & Apparel Bags">कपड़ों के बैग</div>
+                                <div class="option-select" data-value="Utensil Packaging Bags">बर्तनों के बैग</div>
+                                <div class="option-select" data-value="HDPE / LLDPE Bags">HDPE/LLDPE बैग</div>
+                            </div>
+                            <input type="hidden" id="selectedService" value="Grocery Carry Bags">
+                        </div>
+
+                        <div class="builder-step" id="step-3">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--text-light);">3. आकार और मात्रा</h3>
+                            <div class="form-group">
+                                <label for="bagSizes">आकार / मोटाई (उदा. तिरपाल 12x15 फ़ीट, रस्सी 6mm, बैग 16x20)</label>
+                                <input type="text" id="bagSizes" class="form-control"
+                                    placeholder="उदा. तिरपाल 24x30 फ़ीट, 250 GSM" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderScale">अनुमानित थोक आर्डर का पैमाना</label>
+                                <select id="orderScale" class="form-control">
+                                    <option value="Standard Retail Batch">स्टैण्डर्ड रिटेल बैच</option>
+                                    <option value="Wholesale Tier (Bulk Weight/Bundles)">थोक स्तर (बल्क वजन / बंडल)
+                                    </option>
+                                    <option value="Commercial Contract Scale">कमर्शियल आर्डर स्केल</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="requirements">विशेष विवरण या छपाई (कस्टम लोगो प्रिंटिंग)</label>
+                                <textarea id="requirements" class="form-control" rows="3"
+                                    placeholder="पसंदीदा रंग, रस्सी रील का आकार, लोगो छपाई की जानकारी आदि लिखें..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="builder-navigation">
+                            <button type="button" class="btn btn-secondary" id="btn-back"
+                                style="display: none;">पीछे</button>
+                            <button type="button" class="btn btn-primary" id="btn-next" style="margin-left: auto;">आगे
+                                बढ़ें</button>
+                            <button type="submit" class="btn btn-whatsapp" id="btn-submit"
+                                style="display: none; margin-left: auto;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                </svg>
+                                व्हाट्सएप पर रेट भेजें
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                    </svg>
+                    अरविंद<span>ट्रेडिंग</span>
+                </a>
+                <p>वाटरप्रूफ तिरपाल (Tripal), उच्च गुणवत्ता वाली रस्सी (Rassi), और सभी श्रेणियों के थोक प्लास्टिक कैरी
+                    बैग के विश्वसनीय सप्लायर।</p>
+            </div>
+            <div class="footer-col">
+                <h4>उत्पाद</h4>
+                <ul>
+                    <li><a href="#products">तिरपाल (Tripal)</a></li>
+                    <li><a href="#products">रस्सी (Rassi)</a></li>
+                    <li><a href="#products">कैरी बैग थोक</a></li>
+                    <li><a href="#products">HDPE / LLDPE शीट</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>सेवा क्षेत्र</h4>
+                <ul>
+                    <li><a href="#coverage">जगदीशपुर</a></li>
+                    <li><a href="#coverage">सन्हौला</a></li>
+                    <li><a href="#coverage">असरगंज</a></li>
+                    <li><a href="#coverage">सुल्तानगंज</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>संपर्क सूत्र</h4>
+                <div class="footer-contact-info">
+                    <div class="contact-detail-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span>+91 7644000929</span>
+                    </div>
+                    <div class="contact-detail-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span>info@arvindtrading.com</span>
+                    </div>
+                    <div class="contact-detail-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>4266+JX8, जगदीशपुर, भागलपुर, बिहार 813105</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 अरविंद ट्रेडिंग. सर्वाधिकार सुरक्षित।</div>
+            <div>Designed for luxury, high-end B2B conversions.</div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

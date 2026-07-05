@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>थोक उत्पाद कैटलॉग | तिरपाल, रस्सी और कैरी बैग | भागलपुर, जगदीशपुर, अमरपुर, रजौन</title>
+    <meta name="description" content="अरविंद ट्रेडिंग थोक उत्पाद कैटलॉग - 50 से अधिक तिरपाल (Tripal), रस्सी (Rassi) और कैरी बैग के विकल्प। भागलपुर, अमरपुर, रजौन, सन्हौला, असरगंज, सुल्तानगंज के 20 किमी में 24 घंटे में थोक होम डिलीवरी उपलब्ध।">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styling for catalog search and filters */
+        .catalog-header-section {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(30, 62, 98, 0.2) 0%, rgba(5, 11, 20, 1) 100%);
+        }
+        .search-filter-container {
+            max-width: 800px;
+            margin: 2rem auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .search-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        .search-input {
+            width: 100%;
+            padding: 1.1rem 1.5rem 1.1rem 3.5rem;
+            background: rgba(5, 11, 20, 0.7);
+            border: 1px solid var(--border-gold-glass);
+            border-radius: 50px;
+            color: var(--text-light);
+            font-size: 1.05rem;
+            font-family: var(--font-primary);
+            transition: var(--transition-smooth);
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: var(--color-gold);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+        }
+        .search-icon-svg {
+            position: absolute;
+            left: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-gold);
+            pointer-events: none;
+        }
+        .catalog-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .tab-filter {
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--border-glass);
+            background: rgba(30, 62, 98, 0.15);
+            color: var(--text-light);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+        .tab-filter:hover {
+            border-color: var(--color-gold-glass);
+        }
+        .tab-filter.active {
+            background: linear-gradient(135deg, var(--color-gold), #B8972E);
+            color: #050B14;
+            border-color: var(--color-gold);
+        }
+        /* Custom cards sub-items */
+        .catalog-sizes-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .catalog-size-item {
+            font-size: 0.75rem;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid var(--border-glass);
+            border-radius: 4px;
+            background: rgba(5, 11, 20, 0.5);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            color: var(--text-muted);
+        }
+        .catalog-size-item:hover, .catalog-size-item.active {
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            background: rgba(212, 175, 55, 0.05);
+        }
+        .catalog-color-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition-smooth);
+        }
+        .catalog-color-dot.active {
+            border-color: var(--color-gold);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo" id="logo-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                अरविंद<span>ट्रेडिंग</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">मुख्य पृष्ठ</a></li>
+                    <li><a href="index.html#products">उत्पाद श्रेणियां</a></li>
+                    <li><a href="index.html#coverage">डिलीवरी क्षेत्र</a></li>
+                    <li><a href="index.html#quote">पूछताछ फॉर्म</a></li>
+                </ul>
+            </nav>
+
+            <div class="cta-group-nav">
+                <a href="tel:+917644000929" class="btn btn-secondary" id="nav-call-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    कॉल करें
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Catalog Header -->
+    <section class="catalog-header-section">
+        <div class="section-container">
+            <h1 class="section-title">थोक उत्पाद <span>कैटलॉग</span></h1>
+            <p>50 से अधिक प्रीमियम उत्पाद विकल्प: तिरपाल (Tripal), रस्सी (Rassi), और विभिन्न रंगों व आकारों में थोक कैरी बैग उपलब्ध हैं।</p>
+            
+            <div class="search-filter-container">
+                <div class="search-wrapper">
+                    <svg class="search-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" id="product-search" class="search-input" placeholder="उत्पाद का नाम, रंग या उपयोग खोजें (उदा. नीला, तिरपाल, रस्सी)...">
+                </div>
+
+                <div class="catalog-tabs">
+                    <button class="tab-filter active" data-category="all">सभी उत्पाद</button>
+                    <button class="tab-filter" data-category="carrybags">कैरी बैग</button>
+                    <button class="tab-filter" data-category="tripal">तिरपाल (Tripal)</button>
+                    <button class="tab-filter" data-category="rassi">रस्सी (Rassi)</button>
+                </div>
+            </div>
+            
+            <div style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                कुल <span id="search-count" style="color: var(--color-gold); font-weight: 600;">60</span> उत्पाद मिले।
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Grid -->
+    <section style="padding-top: 0;">
+        <div class="section-container">
+            <div class="services-grid" id="products-catalog-grid">
+                <!-- Dynamically loaded via products.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    अरविंद<span>ट्रेडिंग</span>
+                </a>
+                <p>वाटरप्रूफ तिरपाल (Tripal), उच्च गुणवत्ता वाली रस्सी (Rassi), और सभी श्रेणियों के थोक प्लास्टिक कैरी बैग के विश्वसनीय सप्लायर।</p>
+            </div>
+            <div class="footer-col">
+                <h4>उत्पाद</h4>
+                <ul>
+                    <li><a href="index.html#products">तिरपाल (Tripal)</a></li>
+                    <li><a href="index.html#products">रस्सी (Rassi)</a></li>
+                    <li><a href="index.html#products">कैरी बैग थोक</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>सेवा क्षेत्र</h4>
+                <ul>
+                    <li><a href="index.html#coverage">जगदीशपुर</a></li>
+                    <li><a href="index.html#coverage">सन्हौला</a></li>
+                    <li><a href="index.html#coverage">असरगंज</a></li>
+                    <li><a href="index.html#coverage">सुल्तानगंज</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>संपर्क सूत्र</h4>
+                <div class="footer-contact-info">
+                    <div class="contact-detail-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+91 7644000929</span>
+                    </div>
+                    <div class="contact-detail-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span>info@arvindtrading.com</span>
+                    </div>
+                    <div class="contact-detail-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>4266+JX8, जगदीशपुर, भागलपुर, बिहार 813105</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 अरविंद ट्रेडिंग. सर्वाधिकार सुरक्षित।</div>
+            <div>Designed for luxury, high-end B2B conversions.</div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+</html>
