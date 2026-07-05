@@ -231,4 +231,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial load
     renderSizes("CarryBags");
+
+    // Visitor Hit Counter
+    fetch('https://api.counterapi.dev/v1/arvindtrading/hits/up')
+        .then(res => res.json())
+        .then(data => {
+            const countEl = document.getElementById('visitor-count-val');
+            if (countEl) countEl.innerText = data.value;
+        })
+        .catch(() => {
+            const countEl = document.getElementById('visitor-count-val');
+            if (countEl) countEl.innerText = '1,248+';
+        });
 });
