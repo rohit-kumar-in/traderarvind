@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arvindtraders.vercel.app/sitemap.xml
